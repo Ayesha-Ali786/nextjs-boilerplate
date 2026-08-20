@@ -79,9 +79,9 @@ export default function Home() {
   const availableRooms = rooms.filter(room => !room.isAllocated);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-zinc-300 to-zinc-400 dark:from-zinc-650 dark:to-zinc-700">
-    {/* Header */}
-      <header className="bg-white dark:bg-red-950 shadow-sm border-b border-zinc-200 dark:border-zinc-800">
+    <div className="min-h-screen bg-zinc-800">
+    {/*header*/}
+      <header className="  bg-gray-950 shadow-sm border-b border-zinc-200 dark:border-zinc-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -140,7 +140,7 @@ export default function Home() {
         </div>
       </footer>
 
-  {/* Toast Notification */}
+  {}
   {toast.visible && (
     <Toast
       message={toast.message}
