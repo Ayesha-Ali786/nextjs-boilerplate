@@ -22,7 +22,7 @@ export default function SearchFilter({ onFilterChange }: SearchFilterProps) {
   };
 
   return (
-    <section className="bg-white dark:bg-purple-900 rounded-xl shadow-lg p-6">
+    <section className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-lg p-6">
       <h2 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Search & Filter</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

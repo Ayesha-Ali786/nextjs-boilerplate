@@ -35,7 +35,7 @@ export default function RoomInventory({ rooms, onRoomDeleted }: RoomInventoryPro
   const availableCount = rooms.length - allocatedCount;
 
   return (
-    <section className="bg-white dark:bg-purple-900 rounded-xl shadow-lg p-6">
+    <section className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-lg p-6">
       <div className="flex justify-between items-center mb-6">
       <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">Room Inventory</h2>
         <div className="flex gap-4 text-sm">

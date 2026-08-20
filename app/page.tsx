@@ -127,14 +127,9 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="mt-12 py-6 border-t border-zinc-200 dark:border-zinc-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
-        <p>Smart Hostel Room Allocation System • Data stored locally in your browser</p>
-        </div>
-      </footer>
+     
 
-  {}
+
   {toast.visible && (
     <Toast
       message={toast.message}
