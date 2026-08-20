@@ -37,16 +37,16 @@ export default function RoomInventory({ rooms, onRoomDeleted }: RoomInventoryPro
   return (
     <section className="bg-white dark:bg-purple-900 rounded-xl shadow-lg p-6">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">Room Inventory</h2>
+      <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">Room Inventory</h2>
         <div className="flex gap-4 text-sm">
           <span className="text-green-600 dark:text-green-400 font-medium">
-            {availableCount} available
+          {availableCount} available
           </span>
           <span className="text-blue-600 dark:text-blue-400 font-medium">
-            {allocatedCount} allocated
+           {allocatedCount} allocated
           </span>
           <span className="text-zinc-500 dark:text-zinc-400">
-            {rooms.length} total
+           {rooms.length} total
           </span>
         </div>
       </div>

@@ -36,18 +36,17 @@ export default function RoomAllocator({ showToast, onRoomAllocated }: RoomAlloca
       return;
     }
 
-    // Allocation Algorithm - only consider available rooms
+   
     let filteredRooms = rooms.filter(room => {
-      // Skip already allocated rooms
+    
       if (room.isAllocated) return false;
       
-      // Check capacity
+     
       if (room.capacity < studentsNum) return false;
 
-      // Check AC requirement
+      
       if (formData.needAC && !room.hasAC) return false;
 
-      // Check Washroom requirement
       if (formData.needWashroom && !room.hasWashroom) return false;
 
       return true;
@@ -61,12 +60,12 @@ export default function RoomAllocator({ showToast, onRoomAllocated }: RoomAlloca
       return;
     }
 
-    // Sort by capacity (ascending) to get the smallest suitable room
+   
     filteredRooms.sort((a, b) => a.capacity - b.capacity);
 
     const selectedRoom = filteredRooms[0];
 
-    // Allocate the room
+  
     const allocationName = allocatedTo.trim() || `Group of ${studentsNum}`;
     allocateRoom(selectedRoom.id, allocationName, studentsNum);
 
@@ -82,7 +81,7 @@ export default function RoomAllocator({ showToast, onRoomAllocated }: RoomAlloca
   };
 
   return (
-    <section className="bg-white dark:bg-purple-900 rounded-xl shadow-lg p-6">
+    <section className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-lg p-6">
       <h2 className="text-2xl font-bold mb-6 text-zinc-900 dark:text-white">Allocate Room</h2>
 
       <div className="space-y-4">

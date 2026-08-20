@@ -22,7 +22,7 @@ export default function RoomStatus({ allocatedRooms, availableRooms, onRoomUpdat
       <h2 className="text-2xl font-bold mb-6 text-zinc-900 dark:text-white">Room Status</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Available Rooms */}
+        
         <div>
           <div className="flex items-center gap-2 mb-4">
             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
@@ -54,7 +54,7 @@ export default function RoomStatus({ allocatedRooms, availableRooms, onRoomUpdat
           )}
         </div>
 
-        {/* Allocated Rooms */}
+        
         <div>
           <div className="flex items-center gap-2 mb-4">
             <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
@@ -75,12 +75,12 @@ export default function RoomStatus({ allocatedRooms, availableRooms, onRoomUpdat
                   className="flex items-center justify-between p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-100 dark:border-blue-800/30"
                 >
                   <div>
-                    <p className="font-medium text-zinc-900 dark:text-white">Room {room.roomNo}</p>
+                   <p className="font-medium text-zinc-900 dark:text-white">Room {room.roomNo}</p>
                     <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                      Capacity: {room.capacity} • {room.hasAC ? 'AC' : 'No AC'} • {room.hasWashroom ? 'Washroom' : 'No Washroom'}
+                    Capacity: {room.capacity} • {room.hasAC ? 'AC' : 'No AC'} • {room.hasWashroom ? 'Washroom' : 'No Washroom'}
                     </p>
                     <p className="text-xs text-blue-600 dark:text-blue-400 mt-1">
-                      Allocated to: {room.allocatedTo || 'N/A'} ({room.allocatedStudents} students)
+                     Allocated to: {room.allocatedTo || 'N/A'} ({room.allocatedStudents} students)
                     </p>
                   </div>
                   <button
